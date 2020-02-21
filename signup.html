@@ -1,110 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-	
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <title>SIGN UP</title>
   </head>
+
   <body>
-	<script src="validation.js">
-</script>
+    <script src="validation.js"></script>
+
     <div class="mainbody">
+
       <div class="header">
-        <br><h1 id="mainhead"> TRAVELCATION AGENCY</h1>
+
+        <br><h1 id="mainhead">TRIPOMATIC </h1>
+
       </div>
-      <div class="layer">
-        <br><h1 id="mainhead">SIGN UP FORM</h1>
-        <div class="supform">
-          <form class="supform" action="index.html" onsubmit="return validate()"method="post">
-            <br><select class="supform" id="pref">
-              <option value="">Mr.</option>
-              <option value="">Mrs.</option>
-              <option value="">Ms.</option>
-              
-            </select>
-            <input type="text" name="fname" placeholder=" First Name" size="25">
-            <input type="text" name="lname" placeholder=" Last Name" size="25"><br><br>
-            <input type="email" name="email" placeholder=" Email Id" size="50">
-<br>
- <input type="text" name="number" placeholder=" Phone Number" size="50">
-<br>
- <input type="password" name="password" placeholder=" Password" size="50">
-<br>
-<input type="submit" name="submit">
-<br>
 
+      <div class="jumbotron text-center">
 
-            <br>
-            <br>
+        <br><h1 id="mainhead">Create your account now</h1>
 
-            <br><br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+          <form class="form-group" name="supform" onsubmit="return validate()" method="post">
 
+              <label class="control-label" for="email">Name:</label>
+
+              <div class="col-sm-offset-2 col-sm-10">
+
+                <div class="input-group">
+                  <br><select class="form-horizontal" id="pref">
+                    <option value="">Mr.</option>
+                    <option value="">Mrs.</option>
+                    <option value="">Ms.</option>
+                    </select>
+                    <div class="col-xs-4">
+                    <input type="text" class="form-control" name="fname" placeholder=" First Name">
+                    </div>
+                    <div class="col-xs-4">
+                      <input type="text" class="form-control" name="lname" placeholder=" Last Name"><br><br>
+                    </div>
+                </div>
+              </div>
+
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-xs-4">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <div class="col-xs-4">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="cpwd">Confirm Password:</label>
+              <div class="col-xs-4">
+                <input type="password" class="form-control" id="cpwd" placeholder="Enter password again">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="bob">Date of Birth:</label>
+                <div class="col-xs-4">
+                  <input type="date" class="form-control" id="dob"><br><br>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" class="btn btn-light">JOIN</button>
+              </div>
+            </div>
           </form>
-        </div>
-      </div>
     </div>
   </body>
-</html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-	
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Staatliches&display=swap" rel="stylesheet">
-    <title>SIGN UP</title>
-  </head>
-  <body>
-	<script src="validation.js">
-</script>
-    <div class="mainbody">
-      <div class="header">
-        <br><h1 id="mainhead"> TRAVELCATION AGENCY</h1>
-      </div>
-      <div class="layer">
-        <br><h1 id="mainhead">SIGN UP FORM</h1>
-        <div class="supform">
-          <form class="supform" action="index.html" onsubmit="return validate()"method="post">
-            <br><select class="supform" id="pref">
-              <option value="">Mr.</option>
-              <option value="">Mrs.</option>
-              <option value="">Ms.</option>
-              
-            </select>
-            <input type="text" name="fname" placeholder=" First Name" size="25">
-            <input type="text" name="lname" placeholder=" Last Name" size="25"><br><br>
-            <input type="email" name="email" placeholder=" Email Id" size="50">
-<br>
- <input type="text" name="number" placeholder=" Phone Number" size="50">
-<br>
- <input type="password" name="password" placeholder=" Password" size="50">
-<br>
-<input type="submit" name="submit">
-<br>
-
-
-            <br>
-            <br>
-
-            <br><br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+</html

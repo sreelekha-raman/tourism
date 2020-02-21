@@ -3,28 +3,22 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 .mainbody{
-  background-color: #F6F8FF;
+  background-color: #070707;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.layer {
-  /* background-image: url("back.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode:overlay; */
-  width: inherit;
-  height: inherit;
-  text-align: center;
+.jumbotron {
+  background: rgb(0,175,181);
+  background: linear-gradient(90deg, rgba(0,175,181,1) 0%, rgba(19,111,99,1) 35%, rgba(0,212,255,1) 100%);
 }
+
 
 #mainhead{
   font-family: 'Staatliches', cursive;
-  al
-}
-.supform{
-  background-color: #272D2D;
-
+  color: white;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
