@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>SIGN UP</title>
+  </head>
+
+  <body>
+    <script src="validation.js"></script>
+
+    <div class="mainbody">
+
+      <div class="header">
+
+        <br><h1 id="mainhead">TRIPOMATIC </h1>
+
+      </div>
+
+      <div class="jumbotron text-center">
+
+        <br><h1 id="mainhead">Create your account now</h1>
+
+          <form class="form-group"  name="supform" onsubmit="return validate()" method="post">
+
+              <!--<label class="control-label" for="email">Name:</label>-->
+
+              <div class="col-sm-offset-2 col-sm-10">
+
+                <div class="input-group" id="fname_div">
+                  <br><select class="form-horizontal" id="pref" style="height:40px; width:100px">
+                    <option value="">Mr.</option>
+                    <option value="">Mrs.</option>
+                    <option value="">Ms.</option>
+                    </select>
+                    <div class="col-xs-4" >
+                    <input type="text" class="form-control" name="fname" placeholder=" First Name">
+                    
+                    </div>
+                    <div class="col-xs-4" >
+                      <input type="text" class="form-control" name="lname" placeholder=" Last Name"><br><br>
+                      
+                    </div>
+                    <div id="fname_error"></div>
+                </div>
+              </div>
+                
+                <br>
+                <br>
+              <!--<label class="control-label col-sm-2" for="email">Email:</label>-->
+              <div class="col-xs-4" id="email_div">
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+                <div id="email_error"></div>
+              </div>
+            
+            <br>
+                <br>
+            <div class="form-group" >
+              <!--<label class="control-label col-sm-2" for="pwd">Password:</label>-->
+              <div class="col-xs-4" id="password_div">
+                <input type="password" class="form-control" name="password" placeholder="Enter password">
+              </div>
+            </div>
+            <br>
+                <br>
+            <div class="form-group">
+              <!--<label class="control-label col-sm-2" for="cpwd">Confirm Password:</label>-->
+              <div class="col-xs-4" id="pass_confirm_div">
+                <input type="password" class="form-control" name="password_confirm" placeholder="Enter password again">
+                <div id="password_error"></div>
+              </div>
+            </div>
+            <br>
+                <br>
+            <div class="form-group">
+              <!--<label class="control-label col-sm-2" for="bob">Date of Birth:</label>-->
+                <div class="col-xs-4">
+                  <input type="date" class="form-control" id="dob"><br><br>
+                </div>
+            </div>
+             <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" class="btn btn-light" style="height:45px; width:300px ; float: left;" ><a href="home.html">JOIN</button>
+              </div>
+             <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" class="btn btn-light" style="height:35px; width:200px ; float: right;" ><a href="login.html">Click here to login</button>
+             
+            <!--</div>-->
+            </div>
+
+          </form>
+    </div>
+  </body>
+</html
